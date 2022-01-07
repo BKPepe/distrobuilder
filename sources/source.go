@@ -42,6 +42,7 @@ var downloaders = map[string]func() downloader{
 	"rockylinux-http":      func() downloader { return &rockylinux{} },
 	"rootfs-http":          func() downloader { return &rootfs{} },
 	"springdalelinux-http": func() downloader { return &springdalelinux{} },
+	"turris-http":          func() downloader { return &turrisos{} },	
 	"ubuntu-http":          func() downloader { return &ubuntu{} },
 	"voidlinux-http":       func() downloader { return &voidlinux{} },
 }
